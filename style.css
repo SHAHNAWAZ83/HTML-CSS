@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: "Lato", sans-serif;
+  color: #666;
+  font-family: 400;
+}
+.Parallax_container {
+  background-color: black;
+  min-height: 100vh;
+
+  .sections {
+    min-height: 100vh;
+    background-color: #ffff;
+  }
+
+  .sections .section_1,
+  .section_2,
+  .section_3 {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .sections .section_1 {
+    background-image: url(images/image1.png);
+    min-height: 100vh;
+  }
+  .sections .section_2 {
+    background-image: url(images/image2.png);
+    min-height: 400px;
+  }
+  .sections .section_3 {
+    background-image: url(images/image3.png);
+    min-height: 400px;
+  }
+
+  .sections .section_1 .text_conatiner,
+  .sections .section_2 .text_conatiner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 40px;
+  }
+
+  .sections .section_1 .text_conatiner .text_1 {
+    background-color: rgb(25, 21, 21);
+    color: #a99e9e;
+    padding: 15px 20px;
+  }
+  .sections .section_2 .text_conatiner .text_2 {
+    background-color: transparent;
+    padding: 15px 20px;
+    color: aliceblue;
+    border: 2px solid #ccc;
+  }
+
+  .sections .text_section_1 {
+    text-align: center;
+  }
+  .sections .text_section_2 {
+    text-align: center;
+    background-color: #2f2d2d;
+  }
+
+  .sections .text_section_1 h1 {
+    padding: 25px 0;
+    text-transform: uppercase;
+  }
+  .sections .text_section_1 p,
+  .sections .text_section_2 p,
+  .sections .text_section_3 p {
+    padding: 10px 50px;
+  }
+  .sections .text_section_2 h1 {
+    padding: 25px 0;
+    color: rgb(181, 188, 193);
+    text-transform: uppercase;
+  }
+  .sections .text_section_2 h3 {
+    padding: 25px 0;
+    color: rgb(181, 188, 193);
+    text-transform: uppercase;
+  }
+}
