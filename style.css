@@ -56,7 +56,7 @@ body{
         font-size: 15px;
     }
 
-    .form_datails .form_control_detail .form_control input:focus{
+    .form_datails .form_control_detail .form_control input:focus,.form_datails .form_control_detail .form_control_textarea textarea:focus{
 
         outline-color: red;
     }
