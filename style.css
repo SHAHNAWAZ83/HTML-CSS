@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+
+.Container{
+    
+    max-width: 900px;
+    margin: 0 auto;
+    /* background-color: black; */
+    
+    .form_datails{
+        
+        background-color: #ffff;
+        margin: 50px auto;   
+        max-width: 700px;
+        border-radius: 10px;
+        padding: 20px 30px;
+        box-shadow:  3px 4px 3px rgba(1, 1, 1, 0.1);
+    }
+
+    .form_datails .form_header h1{
+        font-size: 50px;
+    }
+    .form_datails .form_header span{
+        font-size: 25px;
+        margin-left: 5px;
+        color: rgb(4, 4, 104);
+    }
+
+    .form_datails .form_control_detail{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .form_datails .form_control_detail .form_control { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_datails .form_control_detail .form_control label , .form_datails .form_control_detail .form_control_textarea label{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+
+    .form_datails .form_control_detail .form_control input  ,select   { 
+        padding: 10px 15px ;
+        font-size: 15px;
+    }
+
+    .form_datails .form_control_detail .form_control input:focus{
+
+        outline-color: red;
+    }
+    
+
+    .form_datails .form_control_detail .form_control_textarea{
+        
+        grid-column-start: 1;
+        grid-column-end: 3;  
+    }
+
+    .form_datails .form_control_detail .form_control_textarea textarea{
+        padding: 10px 15px ;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .form_datails  .button_container {
+        display: flex;
+        justify-content: end;
+    }
+
+    .form_datails  .button_container button{
+        margin-top: 40px;
+        padding: 5px 10px;
+        background-color: red;
+        color: #ffff;
+        font-size: 20px;
+        border: transparent solid;
+        border-radius: 7px;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+
+    }
+
+    .form_datails  .button_container button:hover{
+        cursor: pointer;
+        background-color: #ccc;
+        color: red;
+        transition: 0.3s ease-out;
+    }
+
+    @media(max-width:580px){
+        .form_datails .form_control_detail .form_control_textarea{
+        
+            grid-column: 1 / span 1 ;  
+        }
+    }
+
+   
+    
+}
